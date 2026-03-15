@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Student Page</title>
+
+<style>
+body{
+ padding:20px;
+}
+
+.container{
+ font-size:22px;
+}
+
+.header{
+ color: green;
+ border-left: 8px solid green;
+ padding-left:10px; 
+}
+
+input[type=submit]{
+ padding:8px 20px;
+ font-size:16px;
+ cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+ <h1>Student Page</h1>
+</div>
+
+<div class="container">
+ <center>
+
+ <form method="post" action="student.php" target="rightFrame">
+
+ <table>
+  <tr>
+   <td>Roll No.:</td>
+   <td>
+    <input type="text" name="rollno" required>
+   </td>
+  </tr>
+
+  <tr>
+   <td>Password:</td>
+   <td>
+    <input type="password" name="password" required>
+   </td>
+  </tr>
+ </table>
+
+ <br>
+
+ <input type="submit" name="search" value="Search">
+ <input type="submit" name="cancel" value="Cancel">
+
+ </form>
+
+ </center>
+</div>
+
+</body>
+</html>

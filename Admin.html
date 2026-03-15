@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>AdminPass</title>
+
+<style>
+body{
+ padding:20px;
+}
+
+.container{
+ font-size:22px;
+}
+
+.container img {
+ width:200px;
+ height:200px;
+}
+
+.header{
+ color: green;
+ border-left: 8px solid green;
+ padding-left:10px; 
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+ <h1>Admin Pass</h1>
+</div>
+
+<div class="container">
+ <center>
+
+
+ <form method="post" action="admin.php" target="rightFrame">
+
+ <table>
+  <tr>
+   <td>Username:</td>
+   <td>
+    <input type="text"
+        name="txtUsername"
+        size="53"
+        maxlength="60"
+        required>
+   </td>
+  </tr>
+
+  <tr>
+   <td>Password:</td>
+   <td>
+    <input type="password"
+        name="txtPassword"
+        size="53"
+        maxlength="60"
+        required>
+   </td>
+  </tr>
+ </table>
+
+ <br><br>
+
+ <input type="submit" name="submit" value="Submit">
+ <input type="reset" name="reset" value="Reset">
+
+
+ </form>
+ 
+
+ </center>
+</div>
+
+</body>
+</html>
